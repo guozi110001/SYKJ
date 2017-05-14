@@ -6,6 +6,7 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.sykj.controller.DXSupportController;
 import com.sykj.controller.IndexController;
 
 public class MainConfig extends JFinalConfig {
@@ -36,6 +37,7 @@ public class MainConfig extends JFinalConfig {
 	@Override
 	public void configRoute(Routes me) {
 		me.add("/", IndexController.class);
+		me.add("/dxs",DXSupportController.class);
 	}
 
 }

@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE>
 <html>
 <head>
@@ -15,6 +16,9 @@
 <jsp:include page="/ready.jsp"></jsp:include>
 <div id="url">url:</div>
 <div id="webkitUrl">webkitUrl:</div>
-<input type="file" value="获取照片">
+<form action="/SYKJ/dxs/uploadPics" enctype="multipart/form-data" method="post">
+	<input type="file" value="获取照片">
+	<input type="submit" value="上传">
+</form>
 </body>
 </html>
